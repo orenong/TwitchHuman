@@ -52,7 +52,7 @@ class ChatModelClient():
     
     def set_model(self, model: str):
         """ Change the model used by this client """
-        print(f"switching model from {self.model} to {model}")
+        print(f"switching model from {self._model_name} to {model}")
         self._model_name = model
 
 

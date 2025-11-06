@@ -33,7 +33,7 @@ def load_settings() -> Settings:
             data = yaml.load(f,Loader=yaml.FullLoader)
             return Settings(**data)
     except Exception as e:
-        print("The settings file is broken, fix it or reset your settings.{e}")
+        print(f"The settings file is broken, fix it or reset your settings.{e}")
 
 
 def reset_settings():
