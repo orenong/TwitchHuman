@@ -45,7 +45,7 @@ def reset_settings():
         hide_bboxes=[(0,0,0,0)],
         bot_username="bot",
         bot_twitch_key="166166166",
-        wpm = "100"
+        wpm = 100
     )
     save_settings(settings)
     print(load_settings())
