@@ -15,6 +15,7 @@ class Settings(BaseModel):
     personality: str = Field(default=DEFAULT_PERSONALITY)
     bot_username: str
     bot_twitch_key: str
+    wpm: int
 
 
 # Save to YAML
@@ -44,6 +45,7 @@ def reset_settings():
         hide_bboxes=[(0,0,0,0)],
         bot_username="bot",
         bot_twitch_key="166166166"
+        wpm = "100"
     )
     save_settings(settings)
     print(load_settings())
