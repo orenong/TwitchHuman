@@ -44,7 +44,7 @@ def reset_settings():
         llm_proiver="ollama",
         hide_bboxes=[(0,0,0,0)],
         bot_username="bot",
-        bot_twitch_key="166166166"
+        bot_twitch_key="166166166",
         wpm = "100"
     )
     save_settings(settings)
