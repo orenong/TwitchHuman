@@ -5,7 +5,7 @@ from settings.settings import settings
 class ChatModelClient():
     "This class is responsible for the communication with the openAI-like API, and parsing the responses"
 
-    def __init__(self, model=settings.llm_model_name, provider=settings.llm_proiver, api_key = settings.llm_key):
+    def __init__(self, model=settings.llm_model_name, provider=settings.llm_provider, api_key = settings.llm_key):
         
         print(f"Creating a new chatModel client for provider: {provider} using the model {model}")
         base_url = "http://localhost:166/v1"

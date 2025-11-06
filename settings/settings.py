@@ -8,7 +8,7 @@ class Settings(BaseModel):
     drunkenness: int = Field(ge=0,description="How often the bot will do mistakes or do weird stuff. Controls typos too. Anything above 100 is crazy")
     streamer_channel_name: str = Field(description="the stream where the bot will work")
     llm_model_name: str
-    llm_proiver: Literal["ollama", "openai", "lm-studio","gemini"]
+    llm_provider: Literal["ollama", "openai", "lm-studio","gemini"]
     llm_key: str = Field(default="no-key")
     whisper_model_size: str = Field(default="small")
     hide_bboxes: list[tuple[int,int,int,int]] = Field(description="x1,y1,x2,y2 of bbox. The bot will be blind to what's inside these boxes. Useful when you want to hide the chat")
@@ -41,7 +41,7 @@ def reset_settings():
         drunkenness=20,
         streamer_channel_name="orenog_live0",
         llm_model_name="qwen3-vl:4b-instruct-9500",
-        llm_proiver="ollama",
+        llm_provider="ollama",
         hide_bboxes=[(0,0,0,0)],
         bot_username="bot",
         bot_twitch_key="166166166",
