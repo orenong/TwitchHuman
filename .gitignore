@@ -25,3 +25,10 @@ build/
 .DS_Store
 Thumbs.db
 EOF
+
+
+*.mp3
+*.mp4
+*.yaml
+
+ingnores/
