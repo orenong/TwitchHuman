@@ -15,7 +15,7 @@ TwitchHuman can interact with the stream, and the chatters on twitch's chat, in 
 TwitchHuman Includes many ways to mask being a bot, using typos (and correcting them), intentional mistakes, multi-line messages, emulated feelings, long context, adaptive behavior based on the "vibe" of the chat and simply imidiatly denying being a bot whenever its mentioned. 
 
 ## Features (W.I.P)
-all of the following features will be included in the v1 release
+All of the following features will be included in the v1 release
 
 <b>Listen and see the stream</b> -  The bot can see what the streamer does, ignore user defined zones (such as chat, or confusing UI elements) and react not just to the chat, but also to the video and the audio.
 
